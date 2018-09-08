@@ -108,7 +108,7 @@
     {{--@include('stores.display-box', ['stores' => $featuredstores])--}}
 </div>
 <div class="row byc-blue-bg who-are-we">
-    <div class="col s7  valign-wrapper">
+    <div class="col l7 s12 valign-wrapper">
         <div class="byc-content">
             <h3>Who are we</h3>
             <p>Located a short drive North from Brisbane, the Sunshine Coast is so much more than stunning beaches;
@@ -119,7 +119,7 @@
             <a href="#" class="btn-large byc-white expand">Find out more</a>
         </div>
     </div>
-    <div class="col s5 ">
+    <div class="col l5 s12">
         <div class="byc-content-bg"></div>
     </div>
 </div>
@@ -128,13 +128,13 @@
 <div class="row growth-opportunities">
     <div class="container">
         <h3 class="center">Growth and Opportunities</h3>
-        <div class="col s6 center">
+        <div class="col l6 s12 center">
             <!--<img src="/img/piechart.jpg">-->
             @include('charts.tourism-numbers')
             <p style="font-size: 14px;">Tourism share by region in 2016/2017 Financial Year</br><span
                         style="font-weight: 700;">(Hover to see figures)</span></p>
         </div>
-        <div class="col s6">
+        <div class="col l6 s12">
             <div class="byc-content">
                 <p>Did you know that in Queensland, International tourists predominantly select Brisbane and the Gold
                     Coast as their holiday destination of choice? In 2016-2017, <span style="font-weight: 700;">only 11.3% of tourists visiting Queensland chose to visit the Sunshine Coast.</span>
@@ -153,10 +153,10 @@
 </div>
 
 <div class="row byc-yellow-bg better-future">
-    <div class="col s5 ">
+    <div class="col l5 s12">
         <div class="byc-content-bg"></div>
     </div>
-    <div class="col s7">
+    <div class="col l7 s12">
         <div class="byc-content">
             <h3>Creating jobs and a better future</h3>
             <p>Helping and supporting local businesses creates new job opportunities for local residents, maintains our
@@ -171,7 +171,7 @@
 </div>
 
 <div class="row byc-pink-bg who-are-we why-tourism">
-    <div class="col s7  valign-wrapper">
+    <div class="col l7 s12">
         <div class="byc-content">
             <h3>Why Tourism</h3>
             <p>Tourism is an essential part of the Australian economy, directly contributing $54.7 billion in 2016-17,
@@ -200,7 +200,7 @@
             <a href="#" class="btn-large byc-white expand">Find out more</a>
         </div>
     </div>
-    <div class="col s5 ">
+    <div class="col l5 s12">
         <img src="/img/palms.png">
     </div>
 </div>

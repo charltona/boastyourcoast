@@ -220,7 +220,7 @@ color: #ff6161;
 }
 
 .byc-content {
-	padding: 70px 70px 0px 70px;
+	padding: 70px 70px 70px 70px;
 }
 
 .byc-content h3 {
@@ -321,9 +321,39 @@ color: #ff6161;
 	max-width: 100%;
 }
 
+.why-tourism a {
+	color: #fff;
+}
+
 .why-tourism {
 	background-image: url('../img/coral-bg.jpg');
     background-size: cover;
     background-repeat: none;
     background-position: center;
+}
+
+.why-tourism .byc-content {
+	padding: 70px 70px 70px 70px!important;
+}
+
+@media (max-width: 992px) {
+	.icon-block img {
+		max-width: 100px;
+	}
+	.three-col-options h2 {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 992px) {
+	.icon-block img {
+		max-width: 170px;
+	}
+	.three-col-options h2 {
+		font-size: 28px;
+	}
+	
+	.three-col-options .icon-block {
+		margin-bottom: 40px;
+	}
 }
