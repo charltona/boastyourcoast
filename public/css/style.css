@@ -138,7 +138,7 @@ nav {
 }
 
 .icon-block img {
-    max-width: 200px;
+    max-width: 170px;
     display: block;
     margin: 0 auto;
 }
@@ -228,12 +228,15 @@ color: #ff6161;
 
 .featured-stores {
 	background-color: #f9b521;
-	display: none;
 }
 
 .featured-stores .card {
 	box-shadow: none;
 	webkit-box-shadow: none;
+}
+
+.featured-stores .card-image span.card-title {
+	transition: 0.3s all;
 }
 
 .featured-stores .card-image img {
@@ -245,7 +248,8 @@ color: #ff6161;
 }
 
 .featured-stores {
-	padding-top: 50px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .featured-stores .card .card-content {
@@ -256,11 +260,31 @@ color: #ff6161;
 }
 
 .featured-stores .card .card-title {
-	font-size: 20px;
-	font-weight: 700;
+	font-size: 19px;
+	letter-spacing: 0.4px;
+	font-weight: 400;
+	background-color: rgba(0,0,0,0.4);
+	width: 100%;
+}
+
+.featured-stores .card .card-image .card-title { 
+	top: 0;
+	bottom: initial;
+	padding: 10px;
+}
+
+.featured-stores span.card-title {
+	opacity: 0;
+	background-color: rgba(0,0,0,0.35);
+	width: 100%;
+}
+
+.featured-stores .card-image:hover span.card-title {
+	opacity: 1;
 }
 
 .featured-stores h4 {
+	margin-bottom: 30px;
 	color: #fff;
 	/*color: #0fb6b8;*/
 }

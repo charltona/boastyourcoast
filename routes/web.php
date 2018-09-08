@@ -13,7 +13,7 @@ use App\Store;
 */
 
 Route::get('/', function () {
-    $featuredstores = Store::where('featured', 1)->limit(4)->get();
+    $featuredstores = Store::where('featured', 1)->limit(8)->get();
     return view('welcome', ['featuredstores'=>$featuredstores]);
 });
 

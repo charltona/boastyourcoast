@@ -103,6 +103,7 @@
   </div>
   
   	<div class="featured-stores">
+	<div class="container">
 	<h4 class="center">Featured Local Businesses</h3>
 	{{--@include('stores.display-box', ['stores' => $featuredstores])--}}
 	</div>
@@ -110,8 +111,8 @@
       <div class="col s7  valign-wrapper">
 		<div class="byc-content">
 			<h3>Who are we</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor.</p>
+			<p>Located a short drive North from Brisbane, the Sunshine Coast is so much more than stunning beaches; there’s also a lush hinterland and vibrant craft brewery scene. Sunny Coast residents are known for being laid back, friendly and fond of the beautiful natural wonders that line our Coast.</p>
+			<p>Want more info on how you can help our community and small businesses? Look no further!</p>
 			</br>
 			<a href="#" class="btn-large byc-white expand">Find out more</a>
 		</div>
@@ -129,7 +130,9 @@
 	</div>
 	<div class="col s6">
 	<div class="byc-content">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor. </br></br>Donec fermentum, dui quis rhoncus ullamcorper, magna lorem cursus elit, hendrerit fringilla mi arcu in velit. Aliquam vulputate orci eu diam vestibulum scelerisque. Maecenas orci diam, eleifend vitae ante at, tincidunt interdum quam. Vestibulum ornare ultricies neque non ultricies. </p>
+	<p>Did you know that in Queensland, International tourists predominantly select Brisbane and the Gold Coast as their holiday destination of choice? In 2016-2017, <span style="font-weight: 700;">only 11.3% of tourists visiting Queensland chose to visit the Sunshine Coast.</span></p>
+	<p>Tourism in Queensland set to growth exponentially over the next decade. The Sunshine Coast is in a great position to experience sustainable growth across almost all industries as tourists consume a diverse range of services.</p>
+	<p>Dataset: <a href="https://data.qld.gov.au/dataset/internat-visitors-qld-tourism-region" target="_blank">[International Visitors by Tourism Region - Queensland Government].</a></p>
 	</br>
 	<a href="#" class="btn-large byc-pink expand">Find out more</a>
 	</div>
@@ -142,8 +145,8 @@
       <div class="col s7">
 		<div class="byc-content">
 			<h3>Creating jobs and a better future</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor.</p>
+			<p>Helping and supporting local businesses creates new job opportunities for local residents, maintains our community spirit and also <span style="font-weight: 700;">gives smaller businesses a fighting chance for success</span> as the tourism industry grows within the region.</p>
+			<p>Supporting our local community is easily! Simply choose to shop local where possible. For more information, check out our Local Business Hub.</p>
 			</br>
 			<a href="#" class="btn-large byc-white expand">Find out more</a>
 		</div>
