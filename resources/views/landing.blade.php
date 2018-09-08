@@ -65,7 +65,8 @@
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Boast your Coast</h5>
-                    <p class="grey-text text-lighten-4">Insert Description</p>
+                    <p class="grey-text text-lighten-4">Proudly supported by the Sunshine Coast Council. Help us support
+                        local businesses, foster sustainable growth and improve the quality of life for all residents.</p>
 
 
                 </div>

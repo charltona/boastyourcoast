@@ -18,7 +18,8 @@
                </div>
                @else
                    <div class="card-image">
-                       <img src="http://lorempixel.com/640/400/food/{{$loop->index}}" alt="{{$store->name}}" class="darken-4">
+                       <img src="/img/640x400.png" alt="{{$store->name}}" style="max-height:200px; object-fit:cover">
+                       {{--<img src="http://lorempixel.com/640/400/food/" alt="{{$store->name}}" class="darken-4">--}}
                        <span class="card-title">{{$store->name}}</span>
                    </div>
                 @endif
