@@ -55,6 +55,24 @@
                 <label for="name">Website</label>
             </div>
 
+            <div class="input-field col s6">
+                <label>
+                    <input type="checkbox" name="featured" value="1" />
+                    <span>Featured?</span>
+                </label>
+            </div>
+
+
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>Image</span>
+                    <input type="file" name="image">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                </div>
+            </div>
+
             <!-- update these with dynamic values when ready -->
             <input type="hidden" name="owner_id" value="1">
             <input type="hidden" name="status" value="1">
