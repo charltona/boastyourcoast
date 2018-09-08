@@ -9,6 +9,7 @@
     <title>Boast Your Coast!</title>
 
     <!-- Fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Assistan:400,700|Kalam" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/style.css">
@@ -33,17 +34,27 @@
 
 <div class="content">
     <nav>
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img
+        <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo"><img
                         src="img/logo.png"></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Navbar Link</a></li>
+				<li><a href="{{ url('/home') }}">Home</a></li>
+				<li><a href="/resident-information">Resident Info</a></li>
+                <li><a href="/local-business">Business Hub</a></li>
+				<li><a href="/visitor-information">Visitors</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Contact</a></li>
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
-                <li><a href="#">Navbar Link</a></li>
+				<li><a href="{{ url('/home') }}">Home</a></li>
+                <li><a href="/resident-information">Resident Info</a></li>
+                <li><a href="/local-business">Business Hub</a></li>
+				<li><a href="/visitor-information">Visitors</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Contact</a></li>
                 @if (Route::has('login'))
                     @auth
-                        <li><a href="{{ url('/home') }}">Home</a></li>
+                        
                     @else
                         <li><a href="{{ route('login') }}">Login</a></li>
                         <li><a href="{{ route('register') }}">Register</a></li>
@@ -261,6 +272,7 @@
 </footer>
 <script>
     $(document).ready(function () {
+		$('.sidenav').sidenav();
         $('div#tourismnumbers a').css('color', '#fff');
     });
 </script>
