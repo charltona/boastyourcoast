@@ -26,7 +26,7 @@
 
     <div class="content">
         <nav>
-            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="img/logo.png"></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#">Navbar Link</a></li>
                 </ul>
@@ -56,12 +56,59 @@
                 <h5 class="header col s12 light">Supporting sustainable growth on the Sunshine Coast</h5>
             </div>
             <div class="row center">
-                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light">More Info</a>
+                <a href="#" id="download-button" class="btn-large waves-effect waves-light expand">More Info</a>
             </div>
             <br><br>
 
         </div>
     </div>
+    <div class="container">
+    <div class="section three-col-options">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block center">
+            <img src="img/flipflops.png">
+            <h2 class="center byc-yellow">Resident Info</h2>
+            <a href="#" id="download-button" class="btn-large byc-yellow expand">More Info</a>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block center">
+              <img src="img/cocktail.png">
+            <h2 class="center byc-blue">Local Business Hub</h2>
+            <a href="#" id="download-button" class="btn-large expand">More Info</a>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block center">
+              <img src="img/map.png">
+            <h2 class="center byc-pink">Visitor Tips</h2>
+            <a href="#" id="download-button" class="btn-large byc-pink expand">More Info</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  
+  <div class="row byc-blue-bg who-are-we">
+      <div class="col s7">
+		<div class="byc-content">
+			<h3>Who are we</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor.</p>
+			</br>
+			<a href="#" class="btn-large byc-white expand">Find out more</a>
+		</div>
+	  </div>
+      <div class="col s5 "><div class="byc-content-bg"></div></div>
+    </div>
+  
     <footer class="page-footer orange">
         <div class="container">
             <div class="row">
