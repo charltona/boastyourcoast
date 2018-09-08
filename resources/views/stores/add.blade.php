@@ -11,7 +11,9 @@
     status - on import
     owner_id - from user auth
 -->
+@extends('landing');
 
+@section ('content')
 @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
@@ -85,3 +87,5 @@
         </div>
     </form>
 </div>
+
+@endsection
