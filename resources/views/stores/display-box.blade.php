@@ -1,11 +1,15 @@
 {{--
     USAGE:
-    @include('stores.display-box', ['stores' => $stores])
+    @include('stores.display-box', ['stores' => $stores, 'collapse' => 'true'])
  --}}
 <div class="row">
 
 @foreach ($stores as $store)
-       <div class="col sm12 m6 l4">
+    @if (isset($collapse))
+       <div class="col sm12 m6 l3 no-padding">
+   @else
+       <div class="col sm12 m6 l3">
+   @endif
            <div class="card">
                @if ($store->image)
                <div class="card-image">
