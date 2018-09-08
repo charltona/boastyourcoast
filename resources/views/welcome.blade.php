@@ -173,15 +173,14 @@
 	<div class="row living-in-sc">
 	<div class="container">
 	<h3 class="center">Living on the Sunshine Coast</h3>
-	<div class="col s6">
+	<div class="col xl4">
 	<div class="byc-content">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor. </br></br>Donec fermentum, dui quis rhoncus ullamcorper, magna lorem cursus elit, hendrerit fringilla mi arcu in velit. Aliquam vulputate orci eu diam vestibulum scelerisque. Maecenas orci diam, eleifend vitae ante at, tincidunt interdum quam. Vestibulum ornare ultricies neque non ultricies. </p>
-	</br>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor.</p>
 	<a href="#" class="btn-large byc-blue expand">Find out more</a>
 	</div>
 	</div>
-	<div class="col s6 center">
-	<img src="/img/graph.jpg">
+	<div class="col xl8 center">
+	<img src="/img/graph2.jpg">
 	</div>
 	</div>
 	</div>
@@ -225,7 +224,6 @@
 	<script>
 	$(document).ready(function () {
     $('div#tourismnumbers a').css('color', '#fff');
-	console.log("test");
 	});
 	</script>
 </body>

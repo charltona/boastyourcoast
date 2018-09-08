@@ -105,6 +105,7 @@ nav {
 .section.hero h5 { 
     font-family: 'Assistant', Arial, sans-serif;
     font-size: 22px;
+	margin-bottom: 30px!important;
 }
 
 .section.hero .btn-large {
@@ -312,10 +313,12 @@ color: #ff6161;
 
 .living-in-sc  h3 {
 	color: #0fb6b8;
+	margin-bottom: 20px;
 }
 
+
 .living-in-sc img {
-	max-width: 450px;
+	max-width: 100%;
 }
 
 .why-tourism {
