@@ -1,20 +1,29 @@
-<?php 
+<?php
 
 namespace App\Http\Controllers;
 
+use App\Store;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+
 
 class StoreController extends Controller 
 {
 
   /**
    * Display a listing of the resource.
+   * URL: /stores
    *
    * @return Response
    */
   public function index()
   {
-    
+    $stores = Store::orderBy('id')->get();
+
+    return view('stores.listing', [
+        'stores' => $stores
+    ]);
+
   }
 
   /**
