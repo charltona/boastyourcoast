@@ -75,6 +75,7 @@ class StoreController extends Controller
       $store->category = $request->category;
       $store->status = $request->status;
       $store->owner_id = $request->owner_id;
+      $store->featured = isset($request->featured) ? $request->featured : '0';
 
       if ($request->file('image')) {
           $file = $request->file('image');
