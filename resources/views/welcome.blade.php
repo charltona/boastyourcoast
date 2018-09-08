@@ -20,6 +20,7 @@
     <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
     <script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
     <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 </head>
@@ -126,6 +127,7 @@
 	<div class="col s6 center">
 	<!--<img src="/img/piechart.jpg">-->
         @include('charts.tourism-numbers')
+		<p style="font-size: 14px;">Tourism share by region in 2016/2017 Financial Year</br><span style="font-weight: 700;">(Hover to see figures)</span></p>
 	</div>
 	<div class="col s6">
 	<div class="byc-content">
@@ -220,6 +222,12 @@
             </div>
         </div>
     </footer>
+	<script>
+	$(document).ready(function () {
+    $('div#tourismnumbers a').css('color', '#fff');
+	console.log("test");
+	});
+	</script>
 </body>
 
 </html>
