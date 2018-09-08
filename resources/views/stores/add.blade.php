@@ -12,6 +12,15 @@
     owner_id - from user auth
 -->
 
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 
 <div class="row">
     <form action="/store" method="POST" enctype="multipart/form-data" class="col s12">
@@ -24,6 +33,16 @@
             <div class="input-field col s12">
                 <textarea id="description" class="materialize-textarea" name="description"></textarea>
                 <label for="description">Textarea</label>
+            </div>
+
+            <div class="input-field col s12">
+                <select name="category">
+                    <option value="" disabled selected>Choose your option</option>
+                    @foreach ($categories as $category)
+                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                    @endforeach
+                </select>
+                <label>Category</label>
             </div>
 
             <div class="input-field col s6">
@@ -42,6 +61,9 @@
 
             <button class="btn waves-effect waves-light" type="submit" name="action">Submit
             </button>
+
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
         </div>
     </form>
 </div>
