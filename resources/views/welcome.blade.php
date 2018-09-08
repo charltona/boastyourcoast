@@ -15,6 +15,13 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles -->
+
+    <!-- amCharts javascript sources -->
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+
 </head>
 
 <body>
@@ -97,7 +104,7 @@
   
   	<div class="featured-stores">
 	<h4 class="center">Featured Local Businesses</h3>
-	@include('stores.display-box', ['stores' => $featuredstores])
+	{{--@include('stores.display-box', ['stores' => $featuredstores])--}}
 	</div>
   <div class="row byc-blue-bg who-are-we">
       <div class="col s7  valign-wrapper">
@@ -117,7 +124,8 @@
 	<div class="container">
 	<h3 class="center">Growth and Opportunities</h3>
 	<div class="col s6 center">
-	<img src="/img/piechart.jpg">
+	<!--<img src="/img/piechart.jpg">-->
+        @include('charts.tourism-numbers')
 	</div>
 	<div class="col s6">
 	<div class="byc-content">
