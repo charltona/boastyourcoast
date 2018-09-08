@@ -18,6 +18,19 @@ Route::get('/', function () {
 });
 
 
+Route::get('/local-business', function() {
+    return view('local-business');
+});
+
+Route::get('/visitor-information', function() {
+    return view('visitor-information');
+});
+
+Route::get('/resident-information', function() {
+    return view('resident-information');
+});
+
+
 Route::resource('store', 'StoreController');
 
 Auth::routes();

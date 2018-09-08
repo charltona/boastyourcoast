@@ -1,5 +1,5 @@
 @extends('landing')
-@section ('title','Add a new listing')
+@section ('title','Edit a listing')
 @section ('content')
 @if ($errors->any())
     <div class="alert alert-danger">
@@ -11,17 +11,18 @@
     </div>
 @endif
 <div class="section">
-    <h3>Add a new store listing</h3>
+    <h3>Update a store listing</h3>
 <div class="row">
-    <form action="/store" method="POST" enctype="multipart/form-data" class="col s12">
+    <form action="/store/{{$store->id}}" method="POST" enctype="multipart/form-data" class="col s12">
+        @method('PUT')
         <div class="row">
             <div class="input-field col s12">
-                <input type="text" id="name" name="name" class="validate">
+                <input type="text" id="name" name="name" class="validate" value="{{$store->name}}">
                 <label for="name">Name</label>
             </div>
 
             <div class="input-field col s12">
-                <textarea id="description" class="materialize-textarea" name="description"></textarea>
+                <textarea id="description" class="materialize-textarea" name="description" value="">{{$store->description}}</textarea>
                 <label for="description">Description</label>
             </div>
 
@@ -29,24 +30,24 @@
                 <select name="category" class="browser-default">
                     <option value="" disabled selected>Choose your category</option>
                     @foreach ($categories as $category)
-                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        <option value="{{ $category->id }}" <?php if ($store->category == $category->id) {echo 'selected';} ?>> {{ $category->name }}</option>
                     @endforeach
                 </select>
             </div>
 
             <div class="input-field col s12">
-                <input type="text" id="address" name="address" class="validate">
+                <input type="text" id="address" name="address" class="validate" value="{{$store->address}}">
                 <label for="address">Address</label>
             </div>
 
             <div class="input-field col s12">
-                <input type="text" id="website" name="website" class="validate">
+                <input type="text" id="website" name="website" class="validate" value="{{$store->website}}">
                 <label for="website">Website</label>
             </div>
 
             <div class=" col s12">
                 <label>
-                    <input type="checkbox" name="featured" value="1" />
+                    <input type="checkbox" name="featured" value="1" <?php if ($store->featured == 1) {echo 'checked';} ?> />
                     <span>Featured?</span>
                 </label>
             </div>
@@ -58,7 +59,7 @@
                     <input type="file" name="image">
                 </div>
                 <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text">
+                    <input class="file-path validate" type="text" value="{{$store->image}}">
                 </div>
 
             </div>

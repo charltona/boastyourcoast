@@ -6,6 +6,7 @@ use App\Category;
 use App\Store;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
 
 
@@ -111,7 +112,10 @@ class StoreController extends Controller
    */
   public function edit($id)
   {
-    
+    $store = Store::where('id', $id)->first();
+     $categories = Category::all();
+
+      return view('stores.edit', ['store'=>$store, 'categories'=>$categories]);
   }
 
   /**
@@ -122,7 +126,44 @@ class StoreController extends Controller
    */
   public function update($id)
   {
-    
+      $validator = Validator::make(Input::all(), [
+
+          'name' => 'required|max:225',
+          'description' => 'required',
+          'category' => 'required|max:225',
+          'address' => 'required|max:225'
+      ]);
+
+      if ($validator->fails()) {
+          return redirect('/store/create')
+              ->withInput()
+              ->withErrors($validator);
+      }
+
+      $store = new Store;
+
+      ;
+      $store = Store::where('id', $id)->first();
+      $store->name = Input::get('name');
+      $store->description =  Input::get('description');
+      $store->address =  Input::get('address');
+      $store->website = Input::get('website');
+      $store->category =  Input::get('category');
+      $store->status =  Input::get('status');
+      $store->owner_id =  Input::get('owner_id');
+      $featured = Input::get('featured');
+      $store->featured = isset($featured) ? Input::get('featured') : '0';
+
+      if (Input::file('image')) {
+          $file = Input::file('image');
+          $store_image_name = $file->store('public');
+          $store->image = trim($store_image_name, "public/");
+      }
+
+
+      $store->save();
+
+      return redirect('/store');
   }
 
   /**
