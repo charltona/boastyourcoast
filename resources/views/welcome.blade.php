@@ -1,102 +1,102 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Boast Your Coast!</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+    <title>Boast Your Coast!</title>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #fff;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Assistan:400,700|Kalam" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+</head>
 
-            body {
-                background-image: url('/img/bg.jpg');
-                background-repeat: no-repeat;
-                background-position: center center;
+<body>
 
-            }
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 
-            .full-height {
-                height: 100vh;
-            }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
 
-            .position-ref {
-                position: relative;
-            }
+    <div class="content">
+        <nav>
+            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Navbar Link</a></li>
+                </ul>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .subtitle {
-                font-size: 38px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="#">Navbar Link</a></li>
+                    @if (Route::has('login'))
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                    <li><a href="{{ url('/home') }}">Home</a></li>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                    <li><a href="{{ route('login') }}">Login</a></li>
+                    <li><a href="{{ route('register') }}">Register</a></li>
                     @endauth
-                </div>
-            @endif
+                    @endif
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    #BoastYourCoast
-                </div>
-                <div class="subtitle m-b-md">
-                    Boasting Coasts since '74
-                </div>
+    </div>
 
+    <div class="section no-pad-bot hero" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center">Boast Your Coast</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Supporting sustainable growth on the Sunshine Coast</h5>
+            </div>
+            <div class="row center">
+                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light">More Info</a>
+            </div>
+            <br><br>
+
+        </div>
+    </div>
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Boast your Coast</h5>
+                    <p class="grey-text text-lighten-4">Insert Description</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Site Map</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </body>
+        <div class="footer-copyright">
+            <div class="container center">
+                Made by <a class="orange-text text-lighten-3" href="#">A Nice Well Behaved Cheese</a> | GovHack 2018
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>

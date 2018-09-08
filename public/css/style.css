@@ -1,0 +1,39 @@
+body {
+    font-family: 'Assistant', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Kalam', cursive;
+}
+
+nav {
+    background-color: #0fb6b8;
+    box-shadow: none;
+}
+
+.section.hero {
+    background-image: url('../img/byc-bg.jpg');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    color: #fff;
+    min-height: 500px;
+}
+
+.section.hero h1 {
+    margin-bottom: 0px !important;
+}
+
+.section.hero .btn-large {
+    background-color: rgba(255, 255, 255, 0);
+    text-transform: none;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    height: 48px;
+    min-width: 140px;
+    line-height: 45px;
+}
