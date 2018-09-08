@@ -10,19 +10,18 @@
    @else
        <div class="col sm12 m6 l3">
    @endif
-           <div class="card">
+           <div class="card hoverable">
                @if ($store->image)
                <div class="card-image">
                    <img src="/storage/{{$store->image}}" alt="{{$store->name}}" style="max-height:200px; object-fit:cover">
+                   <span class="card-title">{{$store->name}}</span>
                </div>
                @else
                    <div class="card-image">
                        <img src="http://lorempixel.com/640/400/food/{{$loop->index}}" alt="{{$store->name}}" class="darken-4">
+                       <span class="card-title">{{$store->name}}</span>
                    </div>
                 @endif
-               <div class="card-content">
-                   <span class="card-title">{{$store->name}}</span>
-               </div>
            </div>
        </div>
 
