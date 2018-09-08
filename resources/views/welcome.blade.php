@@ -116,7 +116,7 @@
 
 <div class="featured-stores">
     <h4 class="center">Featured Local Businesses</h3>
-    {{--@include('stores.display-box', ['stores' => $featuredstores])--}}
+    @include('stores.display-box', ['stores' => $featuredstores])
 </div>
 <div class="row byc-blue-bg who-are-we">
     <div class="col l7 s12 valign-wrapper">
@@ -140,7 +140,7 @@
     <div class="container">
         <h3 class="center">Growth and Opportunities</h3>
         <div class="col l6 s12 center">
-            <!--<img src="/img/piechart.jpg">-->
+
             @include('charts.tourism-numbers')
             <p style="font-size: 14px;">Tourism share by region in 2016/2017 Financial Year</br><span
                         style="font-weight: 700;">(Hover to see figures)</span></p>
