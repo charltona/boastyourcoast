@@ -48,7 +48,7 @@
 
     </div>
 
-    <div class="section no-pad-bot hero" id="index-banner">
+    <div class="section no-pad-bot hero valign-wrapper" id="index-banner">
         <div class="container">
             <br><br>
             <h1 class="header center">Boast Your Coast</h1>
@@ -95,9 +95,12 @@
     </div>
   </div>
   
-  
+  	<div class="featured-stores">
+	<h4 class="center">Featured Local Businesses</h3>
+	@include('stores.display-box', ['stores' => $featuredstores])
+	</div>
   <div class="row byc-blue-bg who-are-we">
-      <div class="col s7">
+      <div class="col s7  valign-wrapper">
 		<div class="byc-content">
 			<h3>Who are we</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor.</p>
@@ -108,23 +111,86 @@
 	  </div>
       <div class="col s5 "><div class="byc-content-bg"></div></div>
     </div>
+
+	
+	<div class="row growth-opportunities">
+	<div class="container">
+	<h3 class="center">Growth and Opportunities</h3>
+	<div class="col s6 center">
+	<img src="/img/piechart.jpg">
+	</div>
+	<div class="col s6">
+	<div class="byc-content">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor. </br></br>Donec fermentum, dui quis rhoncus ullamcorper, magna lorem cursus elit, hendrerit fringilla mi arcu in velit. Aliquam vulputate orci eu diam vestibulum scelerisque. Maecenas orci diam, eleifend vitae ante at, tincidunt interdum quam. Vestibulum ornare ultricies neque non ultricies. </p>
+	</br>
+	<a href="#" class="btn-large byc-pink expand">Find out more</a>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<div class="row byc-yellow-bg better-future">
+	<div class="col s5 "><div class="byc-content-bg"></div></div>
+      <div class="col s7">
+		<div class="byc-content">
+			<h3>Creating jobs and a better future</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor.</p>
+			</br>
+			<a href="#" class="btn-large byc-white expand">Find out more</a>
+		</div>
+	  </div>
+    </div>
+	
+	<div class="row byc-pink-bg who-are-we why-tourism">
+      <div class="col s7  valign-wrapper">
+		<div class="byc-content">
+			<h3>Why Tourism</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor.</p>
+			</br>
+			<a href="#" class="btn-large byc-white expand">Find out more</a>
+		</div>
+	  </div>
+      <div class="col s5 ">
+	  <img src="/img/palms.png">
+	  </div>
+    </div>
+	
+	
+	<div class="row living-in-sc">
+	<div class="container">
+	<h3 class="center">Living on the Sunshine Coast</h3>
+	<div class="col s6">
+	<div class="byc-content">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet. Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor. </br></br>Donec fermentum, dui quis rhoncus ullamcorper, magna lorem cursus elit, hendrerit fringilla mi arcu in velit. Aliquam vulputate orci eu diam vestibulum scelerisque. Maecenas orci diam, eleifend vitae ante at, tincidunt interdum quam. Vestibulum ornare ultricies neque non ultricies. </p>
+	</br>
+	<a href="#" class="btn-large byc-blue expand">Find out more</a>
+	</div>
+	</div>
+	<div class="col s6 center">
+	<img src="/img/graph.jpg">
+	</div>
+	</div>
+	</div>
   
     <footer class="page-footer orange">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Boast your Coast</h5>
-                    <p class="grey-text text-lighten-4">Insert Description</p>
+                    <p class="grey-text text-lighten-4">Proudly supported by the Sunshine Coast Council. Help us support local businesses, foster sustainable growth and improve the quality of life for all residents.</p>
 
 
                 </div>
                 <div class="col l3 s12">
                     <h5 class="white-text">Site Map</h5>
                     <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
+                        <li><a class="white-text" href="#!">Home</a></li>
+                        <li><a class="white-text" href="#!">Local Business Hub</a></li>
+                        <li><a class="white-text" href="#!">Resident Info</a></li>
+                        <li><a class="white-text" href="#!">Visitor Tips</a></li>
+						<li><a class="white-text" href="#!">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="col l3 s12">

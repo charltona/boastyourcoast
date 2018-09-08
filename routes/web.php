@@ -1,4 +1,5 @@
 <?php
+use App\Store;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $featuredstores = Store::where('featured', 1)->limit(4)->get();
+    return view('welcome', ['featuredstores'=>$featuredstores]);
 });
 
 
