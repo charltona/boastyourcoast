@@ -96,8 +96,10 @@
   </div>
   
   	<div class="featured-stores">
+	<div class="container">
 	<h4 class="center">Featured Local Businesses</h3>
-	@include('stores.display-box', ['stores' => $featuredstores])
+	@include('stores.display-box', ['stores' => $featuredstores, 'collapse' => 'true'])
+	</div>
 	</div>
   <div class="row byc-blue-bg who-are-we">
       <div class="col s7  valign-wrapper">
