@@ -31,6 +31,14 @@ Route::get('/resident-information', function() {
     return view('resident-information');
 });
 
+Route::get('/faq', function() {
+    return view('faq');
+});
+
+Route::get('/contact', function() {
+    return view('contact');
+});
+
 
 Route::resource('store', 'StoreController');
 

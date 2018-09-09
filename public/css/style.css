@@ -354,6 +354,18 @@ color: #ff6161;
 	background-size: cover;
 }
 
+.byc-page.faq .page-title.valign-wrapper {
+	height: 300px!important;
+	background-image: url('/img/page-title-bg-5.jpg')!important;
+	background-size: cover;
+}
+
+.byc-page.contact .page-title.valign-wrapper {
+	height: 300px!important;
+	background-image: url('/img/page-title-bg-6.jpg')!important;
+	background-size: cover;
+}
+
 
 .byc-page .page-title h1 {
 	color: #fff;

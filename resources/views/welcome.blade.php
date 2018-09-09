@@ -190,12 +190,16 @@
         <h3 class="center">Living on the Sunshine Coast</h3>
         <div class="col xl4">
             <div class="byc-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum lacus eu aliquet imperdiet.
-                    Praesent elementum tellus gravida massa euismod, in euismod arcu porttitor.</p>
-                <a href="#" class="btn-large byc-blue expand">Find out more</a>
+                <p>The Sunshine Coast is home to a diverse range of people! The majority of Sunshine Coast residents are professionals, technician or trade workers, community service workers and clerical staff.</br></br>
+				Sustainable growth within the tourism industry will ensure more jobs for local residents, meaning a more secure future and stronger community.
+				</p>
+				<p style="font-weight: 700;">Dataset: <a href="https://data.sunshinecoast.qld.gov.au/Society/Census-Data-2011-Qld-Employment-by-Industry/grkm-3d2g"
+                               target="_blank">[Queensland Employment by Industry - Sunshine Coast Council (ABS)].</a>
+                </p>
             </div>
         </div>
         <div class="col xl8 center">
+			</br></br>
             <img src="/img/graph2.jpg">
         </div>
     </div>
