@@ -336,6 +336,30 @@ color: #ff6161;
 	padding: 70px 70px 70px 70px!important;
 }
 
+.byc-page .page-title.valign-wrapper {
+	height: 300px!important;
+	background-image: url('/img/page-title-bg-2.jpg');
+	background-size: cover;
+}
+
+.byc-page .page-title h1 {
+	color: #fff;
+	letter-spacing: 3px;
+}
+
+.byc-page h4 { 
+	font-size: 26px;
+}
+
+.inner-byc-container { 
+	margin-top: 60px;
+}
+
+.byc-page .byc-section {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
 @media (max-width: 992px) {
 	.icon-block img {
 		max-width: 100px;

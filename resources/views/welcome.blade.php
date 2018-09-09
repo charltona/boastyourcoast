@@ -115,8 +115,10 @@
 </div>
 
 <div class="featured-stores">
+	<div class="container">
     <h4 class="center">Featured Local Businesses</h3>
     @include('stores.display-box', ['stores' => $featuredstores])
+	</div>
 </div>
 <div class="row byc-blue-bg who-are-we">
     <div class="col l7 s12 valign-wrapper">
