@@ -344,9 +344,16 @@ color: #ff6161;
 
 .byc-page.business-hub .page-title.valign-wrapper {
 	height: 300px!important;
+	background-image: url('/img/page-title-bg-4.jpg')!important;
+	background-size: cover;
+}
+
+.byc-page.visitor-info-page .page-title.valign-wrapper {
+	height: 300px!important;
 	background-image: url('/img/page-title-bg-3.jpg')!important;
 	background-size: cover;
 }
+
 
 .byc-page .page-title h1 {
 	color: #fff;
