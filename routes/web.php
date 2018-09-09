@@ -34,6 +34,6 @@ Route::get('/resident-information', function() {
 
 Route::resource('store', 'StoreController');
 
-Auth::routes();
+//Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
