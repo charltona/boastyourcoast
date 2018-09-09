@@ -11,20 +11,20 @@
             <div class="col l3 s12">
                 <h5 class="white-text">Site Map</h5>
                 <ul>
-                    <li><a class="white-text" href="#!">Home</a></li>
-                    <li><a class="white-text" href="#!">Local Business Hub</a></li>
-                    <li><a class="white-text" href="#!">Resident Info</a></li>
-                    <li><a class="white-text" href="#!">Visitor Tips</a></li>
-                    <li><a class="white-text" href="#!">FAQ</a></li>
+                    <li><a class="white-text" href="/">Home</a></li>
+                    <li><a class="white-text" href="/local-business">Local Business Hub</a></li>
+                    <li><a class="white-text" href="/resident-info">Resident Info</a></li>
+                    <li><a class="white-text" href="/visitor-information">Visitor Tips</a></li>
+                    <li><a class="white-text" href="/faq">FAQ</a></li>
                 </ul>
             </div>
             <div class="col l3 s12">
                 <h5 class="white-text">Connect</h5>
                 <ul>
-                    <li><a class="white-text" href="#!">Link 1</a></li>
-                    <li><a class="white-text" href="#!">Link 2</a></li>
-                    <li><a class="white-text" href="#!">Link 3</a></li>
-                    <li><a class="white-text" href="#!">Link 4</a></li>
+                    <li><a class="white-text" href="#!">Facebook</a></li>
+                    <li><a class="white-text" href="#!">Instagram</a></li>
+                    <li><a class="white-text" href="#!">Twitter</a></li>
+                    <li><a class="white-text" href="#!">Pinstrest</a></li>
                 </ul>
             </div>
         </div>
