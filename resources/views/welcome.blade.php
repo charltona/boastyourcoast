@@ -41,7 +41,7 @@
             <h5 class="header col s12 light">Supporting sustainable growth on the Sunshine Coast</h5>
         </div>
         <div class="row center">
-            <a href="#" id="download-button" class="btn-large waves-effect waves-light expand">More Info</a>
+            <a href="/local-business" id="download-button" class="btn-large waves-effect waves-light expand">More Info</a>
         </div>
         <br><br>
 
@@ -56,7 +56,7 @@
                 <div class="icon-block center">
                     <img src="img/flipflops.png">
                     <h2 class="center byc-yellow">Resident Info</h2>
-                    <a href="#" id="download-button" class="btn-large byc-yellow expand">More Info</a>
+                    <a href="/resident-information" id="download-button" class="btn-large byc-yellow expand">More Info</a>
                 </div>
             </div>
 
@@ -64,7 +64,7 @@
                 <div class="icon-block center">
                     <img src="img/cocktail.png">
                     <h2 class="center byc-blue">Local Business Hub</h2>
-                    <a href="#" id="download-button" class="btn-large expand">More Info</a>
+                    <a href="/local-business" id="download-button" class="btn-large expand">More Info</a>
                 </div>
             </div>
 
@@ -72,7 +72,7 @@
                 <div class="icon-block center">
                     <img src="img/map.png">
                     <h2 class="center byc-pink">Visitor Tips</h2>
-                    <a href="#" id="download-button" class="btn-large byc-pink expand">More Info</a>
+                    <a href="/visitor-information" id="download-button" class="btn-large byc-pink expand">More Info</a>
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
                 being laid back, friendly and fond of the beautiful natural wonders that line our Coast.</p>
             <p>Want more info on how you can help our community and small businesses? Look no further!</p>
             </br>
-            <a href="#" class="btn-large byc-white expand">Find out more</a>
+            <a href="/faq" class="btn-large byc-white expand">Find out more</a>
         </div>
     </div>
     <div class="col l5 s12">
@@ -125,7 +125,7 @@
                                target="_blank">[International Visitors by Tourism Region - Queensland Government].</a>
                 </p>
                 </br>
-                <a href="#" class="btn-large byc-pink expand">Find out more</a>
+                <a href="/local-business" class="btn-large byc-pink expand">Find out more</a>
             </div>
         </div>
     </div>
@@ -144,7 +144,7 @@
             <p>Supporting our local community is easily! Simply choose to shop local where possible. For more
                 information, check out our Local Business Hub.</p>
             </br>
-            <a href="#" class="btn-large byc-white expand">Find out more</a>
+            <a href="/faq" class="btn-large byc-white expand">Find out more</a>
         </div>
     </div>
 </div>
@@ -174,9 +174,7 @@
                         href="https://www.tra.gov.au/ArticleDocuments/257/Tourism%20Forecasts.pdf.aspx?Embed=Y"
                         target="_blank">[Tourism Forecasts - Australian Government]</a>
             </sub>
-            <br/>
             </br>
-            <a href="#" class="btn-large byc-white expand">Find out more</a>
         </div>
     </div>
     <div class="col l5 s12">

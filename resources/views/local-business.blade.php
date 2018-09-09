@@ -46,7 +46,7 @@
 	<div class="cta center" style="background-color: #ff6160; text-align: center; color: #fff; paddin-top: 40px;">
 	<div style="padding-top: 70px; padding-bottom: 70px;">
 	<p class="center" style="display: block; padding-top: 0px; margin-top: 0px; font-size: 20px;">Want to find out more about how you can promote your Sunshine Coast business?</p>
-	<a class="btn-large byc-white" href="#">Contact Us</a>
+	<a class="btn-large byc-white" href="/contact">Contact Us</a>
 	</div>
 	</div>
 </div>
