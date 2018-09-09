@@ -235,6 +235,10 @@ color: #ff6161;
 	webkit-box-shadow: none;
 }
 
+ .col.store-col {
+	min-height: 230px;
+}
+
 .featured-stores .card-image span.card-title {
 	transition: 0.3s all;
 }

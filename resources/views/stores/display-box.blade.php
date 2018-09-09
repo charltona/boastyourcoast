@@ -6,9 +6,9 @@
 
 @foreach ($stores as $store)
     @if (isset($collapse))
-       <div class="col sm12 m6 l3 no-padding">
+       <div class="col store-col sm12 m6 l3 no-padding">
    @else
-       <div class="col sm12 m6 l3">
+       <div class="col store-col sm12 m6 l3">
    @endif
            <div class="card hoverable">
                @if ($store->image)
