@@ -22,6 +22,7 @@
     <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
     <script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
     <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
@@ -34,12 +35,15 @@
 
     <div class="content">
     <nav>
-        <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo"><img
-                        src="img/logo.png"></a>
+        <div class="nav-wrapper container"><a id="logo-container" href="/home" class="brand-logo"><img
+                        src="/img/logo.png"></a>
             <ul class="right hide-on-med-and-down">
 				<li><a href="{{ url('/home') }}">Home</a></li>
 				<li><a href="/resident-information">Resident Info</a></li>
-                <li><a href="/local-business">Business Hub</a></li>
+				<li><a href="/local-business" class="dropdown-trigger" data-target="dropdown1">Business Hub<i class="material-icons right">arrow_drop_down</i></a></li>
+				<ul id="dropdown1" class="dropdown-content">
+				  <li><a href="/store/create">Register business</a></li>
+				</ul>
 				<li><a href="/visitor-information">Visitors</a></li>
 				<li><a href="#">FAQ</a></li>
 				<li><a href="#">Contact</a></li>
@@ -108,6 +112,7 @@
 	<script>
     $(document).ready(function () {
 		$('.sidenav').sidenav();
+		$(".dropdown-trigger").dropdown();
     });
 	</script>
 </body>

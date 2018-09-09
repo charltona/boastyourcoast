@@ -10,6 +10,7 @@
         </ul>
     </div>
 @endif
+<div class="container add-store">
 <div class="section">
     <h3>Add a new store listing</h3>
 <div class="row">
@@ -53,7 +54,7 @@
 
 
             <div class="file-field input-field col s12">
-                <div class="btn">
+                <div class="btn-large">
                     <span>Upload Image</span>
                     <input type="file" name="image">
                 </div>
@@ -68,7 +69,7 @@
             <input type="hidden" name="status" value="1">
 
             <div class="input-field col s6">
-                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <button class="btn-large byc-pink waves-effect waves-light" type="submit" name="action">Submit
                 </button>
             </div>
 
@@ -78,5 +79,5 @@
     </form>
 </div>
 </div>
-
+</div>
 @endsection

@@ -39,7 +39,10 @@
             <ul class="right hide-on-med-and-down">
 				<li><a href="{{ url('/home') }}">Home</a></li>
 				<li><a href="/resident-information">Resident Info</a></li>
-                <li><a href="/local-business">Business Hub</a></li>
+                <li><a href="/local-business" class="dropdown-trigger" data-target="dropdown1">Business Hub<i class="material-icons right">arrow_drop_down</i></a></li>
+				<ul id="dropdown1" class="dropdown-content">
+				  <li><a href="/store/create">Register business</a></li>
+				</ul>
 				<li><a href="/visitor-information">Visitors</a></li>
 				<li><a href="#">FAQ</a></li>
 				<li><a href="#">Contact</a></li>
@@ -276,6 +279,7 @@
     $(document).ready(function () {
 		$('.sidenav').sidenav();
         $('div#tourismnumbers a').css('color', '#fff');
+		$(".dropdown-trigger").dropdown();
     });
 </script>
 </body>

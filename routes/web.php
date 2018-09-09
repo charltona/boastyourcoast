@@ -19,7 +19,8 @@ Route::get('/', function () {
 
 
 Route::get('/local-business', function() {
-    return view('local-business');
+	$stores = Store::all();
+    return view('local-business', ['stores'=>$stores]);
 });
 
 Route::get('/visitor-information', function() {
